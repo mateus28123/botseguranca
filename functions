@@ -1,0 +1,12 @@
+def gen_pass(caracteres):
+    import random
+    import string
+
+    # Define os caracteres que podem ser usados na senha
+    caracteres_disponiveis = string.ascii_letters + string.digits + string.punctuation
+
+    # Gera a senha aleatória
+    senha = ''.join(random.choice(caracteres_disponiveis) for _ in range(caracteres))
+
+    return senha
+
